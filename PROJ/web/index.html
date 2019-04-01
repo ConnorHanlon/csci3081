@@ -1,0 +1,865 @@
+<!DOCTYPE html PUBLIC>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    </head>
+  <body  style="padding-bottom: 25%">
+    <div class="webpage">
+      <a id= "imagetools-project-index" name="imagetools-project-index"></a>
+      <table class="layout" summary="Navigation">
+        <tbody>
+          <tr>
+            <td class="main">
+                <div class="alert alert-primary" role="alert">
+                    <h1 align="center">Image Editor Applications Flashphoto and MIA</h1>
+                </div>
+              <div class="section" title="Introduction">
+                <div class="titlepage">
+                  <div>
+                    <div>
+                      <h2 class="alert alert-primary" role="alert" align="center">
+                        <a id="introID"></a>
+                        Introduction
+                      </h2>
+                    </div>
+                  </div>
+                </div>
+              <p>
+                Documentation written by Connor Hanlon
+              </p>
+              <p>
+                Codebase Written By: Professor Keefe, TAs of 3081, and Connor
+                Hanlon
+              </p>
+              <p>
+                In this article, the basic applications Flashphoto and MIA are
+                introduced with sections describing how to get started. For
+                developers, the codebase is described in later sections of the
+                article.
+              </p>
+              <p>
+                If you are a user and would like some help getting started, you can follow these links: <a href="#gettingFlashed">"Getting Started with Flashphoto"</a> and <a href="#gettingMIAd">"Getting Started with MIA"</a>.
+              </p>
+              <p>
+                  If you are a developer and would like to contribute to the project, please follow this link: <a href="#forDevs">"For Developers"</a>
+              </p>
+              </div>
+              <div class="section" title="Getting Started with Flashphoto">
+                <div class="titlepage">
+                  <div>
+                    <div>
+                      <h2 class="alert alert-primary" role="alert" align="center">
+                        <a id="gettingFlashed"></a>
+                        Getting Started with Flashphoto
+                      </h2>
+                        <p>For help starting Flashphoto, see the section <a href="#startFlash">"Starting Flashphoto"</a>. For help using a feature such as a tool or a filter, please see <a href="#flashfeatures">"How to use filters and tools for Flashphoto</a> and for additional features such as loading and saving, see <a href="#flashAdd">"Additional Flashphoto Features"</a>.</p>
+                    </div>
+                  </div>
+                </div>
+                  <div class="subsection">
+                      <h4 class="alert alert-secondary" id="startFlash" align="center">Starting Flashphoto</h4>
+                      <p>Open a terminal, command prompt, or bash. Change your directory into the "PROJ" directory where the program is located, and type in <code>./build/bin/flashphoto</code>. If the program did not start, type in <code>make flashphoto</code>, followed by <code>./build/bin/flashphoto</code>. While we recognize that this is not very user friendly and requires the user to be knowledgeable with using command line codes, we are working to make the program easier for users to understand and look for a new release soon.</p>
+                  </div>
+                  <div class="subsection" title="Using Filters and Tools">
+                  <h4 class="alert alert-secondary" id="flashfeatures" align="center">How to use filters and tools for Flashphoto</h4>
+                      <p>
+                        There are 7 tools provided for Flashphoto app as listed below. To see what each tool does, click on the desired tool below. Most descriptions credited to the TAs and Professors of CSCI 3081.
+                      </p>
+                      <p>
+                        Each tool can be chosen by selecting the desired tool in the pop-up window inside of the Flashphoto application. The color can be chosesn for each by clicking on the bar immediately beneath the description "Tool Color" in the pop-up menu.
+                      </p>
+                      <div class="row">
+                         <div class="col-5">
+                            <div class="list-group" id="list-tab" role="tablist">
+                                <a class="list-group-item list-group-item-action" id="list-blurtool-list" data-toggle="list" href="#list-blurtool" role="tab" aria-controls="blurtool" aria-selected="true">Blur Tool</a>
+                                <a class="list-group-item list-group-item-action" id="list-caltool-list" data-toggle="list" href="#list-caltool" role="tab" aria-controls="caltool" aria-selected="false">Calligraphy Pen</a>
+                                <a class="list-group-item list-group-item-action" id="list-chalk-list" data-toggle="list" href="#list-chalk" role="tab" aria-controls="chalk" aria-selected="false">Chalk</a>
+                                <a class="list-group-item list-group-item-action" id="list-eraser-list" data-toggle="list" href="#list-eraser" role="tab" aria-controls="eraser" aria-selected="false">Eraser</a>
+                                <a class="list-group-item list-group-item-action" id="list-high-list" data-toggle="list" href="#list-high" role="tab" aria-controls="highlighter" aria-selected="false">Highlighter</a>
+                                <a class="list-group-item list-group-item-action" id="list-pen-list" data-toggle="list" href="#list-pen" role="tab" aria-controls="pen" aria-selected="false">Pen</a>
+                                <a class="list-group-item list-group-item-action" id="list-spray-can-list" data-toggle="list" href="#list-spray" role="tab" aria-controls="spray-can" aria-selected="false">Spray Can</a>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="tab-content" id="nav-tabContent">
+                                <div class="tab-pane fade" id="list-blurtool" role="tabpanel" aria-labelledby="list-blurtool-list" align="center">
+                                    <img src="resources/beforeblur.PNG" class="rounded mx-auto d-block" alt="...">
+                                    Before the blur tool is applied.
+                                    <img src="resources/afterblur.PNG" class="rounded mx-auto d-block" alt="...">
+                                    After the blur tool is applied.
+                                    <br>
+                                    <br>
+                                    <p>
+                                        The blur tool reduces the sharpness of the image in the area of application of the tool.
+                                    </p>
+                                    <img src="resources/flashblurtool.PNG" class="rounded mx-auto d-block" alt="...">
+                                    <p>
+                                      In order to use this tool, selected the "Blur" button on the GUI as shown above.
+                                    </p>
+                                </div>
+                                <div class="tab-pane fade" id="list-caltool" role="tabpanel" aria-labelledby="list-caltool-list" align="center">
+                                    <img src="resources/calpen.PNG" class="rounded mx-auto d-block" alt="...">
+                                    <p align="left">
+                                    This tool is designed to look like a calligraphy pen.  It works almost the same way as the Pen tool.  Like the Pen tool, it is completely opaque and it covers up any “paint” that was already applied to the canvas.  However, the difference with the Calligraphy Pen is applied tool is an oval tilted at a 30-degree angle.
+                                    </p>
+                                    <img src="resources/flashcal.PNG" class="rounded mx-auto d-block" alt="...">
+                                    <p>
+                                      In order to use this tool, selected the "Calligraphy Pen" button on the GUI as shown above.
+                                    </p>
+                                </div>
+                                <div class="tab-pane fade" id="list-chalk" role="tabpanel" aria-labelledby="list-chalk-list" align="center" >
+                                    <img src="resources/chalk.PNG" class="rounded mx-auto d-block" alt="...">
+                                    <p>
+                                        This tool is designed to look like a piece of chalk dragged across a bumpy surface.
+                                    </p>
+                                    <img src="resources/flashchalk.PNG" class="rounded mx-auto d-block" alt="...">
+                                    <p>
+                                      In order to use this tool, selected the "Chalk" button on the GUI as shown above.
+                                    </p>
+                                </div>
+                                <div class="tab-pane fade" id="list-eraser" role="tabpanel" aria-labelledby="list-eraser-list" align="center">
+                                    <img src="resources/beforeblur.PNG" class="rounded mx-auto d-block" alt="...">
+                                    Before the eraser is applied.
+                                    <img src="resources/aftererase.PNG" class="rounded mx-auto d-block" alt="...">
+                                    After the erasor is applied.
+                                    <br>
+                                    <br>
+                                    <p>
+                                       This tool erases the digital canvas and returns it to its original background color.
+                                    </p>
+                                    <img src="resources/flashtools.PNG" class="rounded mx-auto d-block" alt="...">
+                                    <p>
+                                      In order to use this tool, selected the "Eraser" button on the GUI as shown above.
+                                    </p>
+                                </div>
+                                <div class="tab-pane fade" id="list-high" role="tabpanel" aria-labelledby="list-high-list" align="center">
+                                    <img src="resources/highlighter.PNG" class="rounded mx-auto d-block" alt="...">
+                                    <p>
+                                      This tool is designed to look like a highlighter marker. The applied tool is similar to the Calligraphy pen, but is oriented vertically and is semi-transparent. The color applied to the canvas is approximately 40% the color of the highlighter and 60% whatever color is already on the canvas.
+                                    </p>
+                                    <img src="resources/flashhigh.PNG" class="rounded mx-auto d-block" alt="...">
+                                    <p>
+                                      In order to use this tool, selected the "Highlighter" button on the GUI as shown above.
+                                    </p>
+                                </div>
+                                <div class="tab-pane fade" id="list-pen" role="tabpanel" aria-labelledby="list-pen-list" align="center">
+                                    <img src="resources/pen.PNG" class="rounded mx-auto d-block" alt="...">
+                                    <p>
+                                      This tool is designed to look like a pen.  It makes an opaque, circular mark with constant intensity.  This means that when the pen is applied to the canvas the digital ink from the pen completely covers any color that had previously been applied to the canvas at that position.
+                                    </p>
+                                    <img src="resources/flashpen.PNG" class="rounded mx-auto d-block" alt="...">
+                                    <p>
+                                      In order to use this tool, selected the "Pen" button on the GUI as shown above.
+                                    </p>
+                                </div>
+                                <div class="tab-pane fade" id="list-spray" role="tabpanel" aria-labelledby="list-spray-can-list" align="center">
+                                    <img src="resources/spraycan.PNG" class="rounded mx-auto d-block" alt="...">
+                                    <p>
+                                      This tool is designed to mimic the look of paint from a spray can. The intensity of the spray can is strongest at the center of the tool and fades towards the outside of the tool.
+                                    </p>
+                                    <img src="resources/flashspray.PNG" class="rounded mx-auto d-block" alt="...">
+                                    <p>
+                                      In order to use this tool, selected the "Spray Can" button on the GUI as shown above.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                      </div>
+                      <p></p>
+                      <p>
+                          Additionally there are 8 basic filters provided, and for general descriptions and instructions please click on the desired filter.
+                      </p>
+                      <p>ALL FILTER IMAGES TAKEN FROM ITERATION 1 HANDOUT!</p>
+                         <div class="row">
+                         <div class="col-5">
+                            <div class="list-group" id="list-tab" role="tablist">
+                                <a class="list-group-item list-group-item-action" id="list-blurfilter-list" data-toggle="pill" href="#list-blurfilter" role="tab" aria-controls="blur-filter" aria-selected="true">Blur Filter</a>
+                                <a class="list-group-item list-group-item-action" id="list-edge-list" data-toggle="pill" href="#list-edge" role="tab" aria-controls="edge" aria-selected="false">Edge Detect</a>
+                                <a class="list-group-item list-group-item-action" id="list-sharpen-list" data-toggle="pill" href="#list-sharpen" role="tab" aria-controls="sharpen" aria-selected="false">Sharpen</a>
+                                <a class="list-group-item list-group-item-action" id="list-motion-list" data-toggle="pill" href="#list-motion" role="tab" aria-controls="motion" aria-selected="false">Motion Blur</a>
+                                <a class="list-group-item list-group-item-action" id="list-channels-list" data-toggle="pill" href="#list-channels" role="tab" aria-controls="channels" aria-selected="false">Channels</a>
+                                <a class="list-group-item list-group-item-action" id="list-quantize-list" data-toggle="pill" href="#list-quantize" role="tab" aria-controls="quantize" aria-selected="false">Quantize</a>
+                                <a class="list-group-item list-group-item-action" id="list-saturate-list" data-toggle="pill" href="#list-saturate" role="tab" aria-controls="saturate" aria-selected="false">Saturate</a>
+                                <a class="list-group-item list-group-item-action" id="list-threshold-list" data-toggle="pill" href="#list-threshold" role="tab" aria-controls="threshold" aria-selected="false">Threshold</a>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="tab-content" id="nav-tabContent">
+                                <div class="tab-pane fade" id="list-blurfilter" role="tabpanel" aria-labelledby="list-blurfilter-list" align="center">
+                                    <img src="resources/blurfilter.PNG" class="rounded mx-auto d-block" alt="...">
+                                    <p>
+                                       The blur filter reduces the sharpness of a picture.
+                                    </p>
+                                    <img src="resources/flashblur.PNG" class="rounded mx-auto d-block" alt="...">
+                                    <p>
+                                        In order to use this filter, select the "Blur" button on the GUI as shown above, and adjust the slider to desired level of blur.
+                                        Finally, click on "Apply" to apply the filter.
+                                    </p>
+                                </div>
+                                <div class="tab-pane fade" id="list-edge" role="tabpanel" aria-labelledby="list-edge-list" align="center">
+                                    <img src="resources/edgefilter.PNG" class="rounded mx-auto d-block" alt="...">
+                                    <p>
+                                       The edge detection filter shows only the edges of shapes, where the pixels on the edges of differently colored regions are displayed
+                                        as brightly, whereas pixels elsewhere will be changed to a darker color.
+                                    </p>
+                                    <img src="resources/flashedge.PNG" class="rounded mx-auto d-block" alt="...">
+                                    <p>
+                                        In order to use this filter, select the "Edge Detect" button on the GUI as shown above, and click "Apply".
+                                    </p>
+                                </div>
+                                <div class="tab-pane fade" id="list-sharpen" role="tabpanel" aria-labelledby="list-sharpen-list" align="center">
+                                    <img src="resources/sharpenfilter.PNG" class="rounded mx-auto d-block" alt="...">
+                                    <p>
+                                       The sharpen filter sharpens the image and reduces the amount of blur.
+                                    </p>
+                                    <img src="resources/flashsharp.PNG" class="rounded mx-auto d-block" alt="...">
+                                    <p>
+                                        In order to use this filter, select the "Sharpen" button on the GUI as shown above, and adjust the slider to desired level of sharpness. 
+                                        Then click on "Apply" to apply the filter.
+                                    </p>
+                                </div>
+                                <div class="tab-pane fade" id="list-motion" role="tabpanel" aria-labelledby="list-motion-list" align="center">
+                                    <img src="resources/mblurfilter.PNG" class="rounded mx-auto d-block" alt="...">
+                                    <p>
+                                       The motion blur filter is extremely similar to the blur filter, as the sharpness of the image is reduced. However, the motion blur filter 
+                                        creates a direction of blur. Currently 4 directions are suppported by Flashphoto: North-South, East-West, Northwest-Southeast, and 
+                                        Northeast-Southwest.
+                                    </p>
+                                    <img src="resources/flashmotion.PNG" class="rounded mx-auto d-block" alt="...">
+                                    <p>
+                                        In order to use this filter, select the "Motion Blur" button on the GUI as shown above, and adjust the slider to desired level of blur. 
+                                        Once the level of blur is adjusted, select desired direction of the blur. Finally, click on "Apply" to apply the filter.
+                                    </p>
+                                </div>
+                                <div class="tab-pane fade" id="list-channels" role="tabpanel" aria-labelledby="list-channels-list" align="center">
+                                    <img src="resources/channelsfilter.PNG" class="rounded mx-auto d-block" alt="...">
+                                    <p>
+                                       The channels filter adjusts individual R,G,B channel saturation values. Saturation values of 1 keep the channel the same color,
+                                        values above 1 increase the vibrancy of the channel, and values below 1 decrease the vibrancy.
+                                    </p>
+                                    <img src="resources/flashadj.PNG" class="rounded mx-auto d-block" alt="...">
+                                    <p>
+                                        In order to use this filter, select the "Adjust R,G,B" button on the GUI as shown above, and adjust the desired channel sliders. 
+                                        Finally, click on "Apply" to apply the filter.
+                                    </p>
+                                </div>
+                                <div class="tab-pane fade" id="list-quantize" role="tabpanel" aria-labelledby="list-quantize-list" align="center">
+                                    <img src="resources/quantizefilter.PNG" class="rounded mx-auto d-block" alt="...">
+                                    <p>
+                                       The quantize filter reduces the number of unique colors in an image by grouping similar colors by "bin". 
+                                    </p>
+                                    <img src="resources/flashquant.PNG" class="rounded mx-auto d-block" alt="...">
+                                    <p>
+                                        In order to use this filter, select the "Quantize" button on the GUI as shown above, and adjust the slider to desired number of bins. 
+                                        Finally, click on "Apply" to apply the filter.
+                                    </p>   
+                                </div>
+                                <div class="tab-pane fade" id="list-saturate" role="tabpanel" aria-labelledby="list-saturate-list" align="center">
+                                    <img src="resources/saturatefilter.PNG" class="rounded mx-auto d-block" alt="...">
+                                    <p>
+                                       The saturation filter changes the vibrancy of the colors in the image. A saturation value of 1 will not change the image, however saturation 
+                                        values above 1 adds vibrancy, and less than 1 lowers the vibrancy.
+                                    </p>
+                                    <img src="resources/flashsat.PNG" class="rounded mx-auto d-block" alt="...">
+                                    <p>
+                                        In order to use this filter, select the "Saturate" button on the GUI as shown above, and adjust the slider to desired level of saturation. 
+                                        Finally, click on "Apply" to apply the filter.
+                                    </p>
+                                </div>
+                                <div class="tab-pane fade" id="list-threshold" role="tabpanel" aria-labelledby="list-threshold-list" align="center">
+                                    <img src="resources/thresholdfilter.PNG" class="rounded mx-auto d-block" alt="...">
+                                    <p>
+                                       The threshold filter finds the average intensity of a pixel by averaging the RGB values. According to the threshold values set by the user,
+                                        any pixel with an average intensity greater than the threshold is turned white. Otherwise, the pixel turns black. 
+                                    </p>
+                                    <p>
+                                        In order to use this filter, select the "Threshold" button on the GUI as shown below, and adjust the slider to desired threshold value. 
+                                        Finally, click on "Apply" to apply the filter.
+                                    </p>
+                                    <img src="resources/flashthresh.PNG" class="rounded mx-auto d-block" alt="...">
+                                </div>
+                            </div>
+                        </div>
+                      </div>
+                  </div>
+                  <p></p>
+                <div class="subsection" title="Additional Flashphoto Operations">
+                  <h4 class="alert alert-secondary" id="flashAdd" align="center">Additional Flashphoto Features</h4>
+                    <p>
+                        This section highlights additional features that are useful to getting started with Flashphoto. Please click on the features below for more information.
+                    </p>
+                    <div class="row">
+                         <div class="col-5">
+                            <div class="list-group" id="list-tab" role="tablist">
+                                <a class="list-group-item list-group-item-action" id="list-saveload-list" data-toggle="list" href="#list-saveload" role="tab" aria-controls="saveload" aria-selected="false">Loading and Saving</a>
+                                <a class="list-group-item list-group-item-action" id="list-undoredo-list" data-toggle="list" href="#list-undoredo" role="tab" aria-controls="undoredo" aria-selected="false">Undo and Redo</a>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="tab-content" id="nav-tabContent">
+                                <div class="tab-pane fade" id="list-saveload" role="tabpanel" aria-labelledby="list-saveload-list" align="center">
+                                    <p>
+                                      Loading and saving an image is very simple to do. All that is required is to click on the buttons "Load" or "Save" in the upper left hand corner of your screen as shown below, and you're set!
+                                    </p>
+                                    <img src="resources/load.png" class="rounded mx-auto d-block" alt="...">
+                                </div>
+                                <div class="tab-pane fade" id="list-undoredo" role="tabpanel" aria-labelledby="list-undoredo-list" align="center">
+                                    <p>
+                                      In order to undo or redo a stroke or filter, click on the buttons "Undo" or "Redo" in the GUI as shown by the image below.
+                                    </p>
+                                    <img src="resources/undo.png" class="rounded mx-auto d-block" alt="...">
+                                </div>
+                            </div>
+                        </div>
+                      </div>
+                  </div>
+                  <p></p>
+              </div>
+              <div class="section" title="Getting Started with MIA">
+                <div class="titlepage">
+                  <div>
+                    <div>
+                      <h2 class="alert alert-primary" role="alert" align="center">
+                        <a id="gettingMIAd"></a>
+                        Getting Started with MIA
+                      </h2>
+                    </div>
+                  </div>
+                </div>
+                <p>The MIA application is designed for use with medical professionals. For help starting MIA, see the section <a href="#startMIA">"Starting MIA"</a>. For help using a feature such as a tool or a filter, please see <a href="#miafeatures">"How to use filters and tools for MIA</a> and for additional features such as loading and saving, see <a href="miaAdd">"Additional MIA Features"</a>.</p>
+                  <div class ="subsection" title="startMIA">
+                      <h4 class="alert alert-secondary" id="startMIA" align="center">Starting MIA</h4>
+                      <p>For those who like to view images and mark directly onto the image, MIA can be used with a popup display window. For those who need to process and image without displaying an image, an easy to use command line mode is supported.</p>
+                      <h5>Display Mode</h5>
+                      <p>Open a terminal, command prompt, or bash. Change your directory into the "PROJ" directory where the program is located, and type in <code>./build/bin/mia</code>. If the program did not start, type in <code>make mia</code>, followed by <code>./build/bin/mia</code>. While we recognize that this is not very user friendly and requires the user to be knowledgeable with using command line codes,we are working to make the program easier for users to understand and look for a new release soon.</p>
+                      <br>
+                      <h5>Command Line Mode</h5>
+                      <p>Open a terminal, command prompt, or bash. Change your directory into the "PROJ" directory where the program is located, and type in <code>./build/bin/mia</code>. Following this command, enter in the desired input file as a PNG image. Additionally, add the desired filters after the input image, and when all desired commands have been added, include an output file for the finished image to be saved to.</p>
+                      <p>The command line should look like this once commands and input files have been added:</p>
+                      <code>./build/bin/mia input.png command1 value1 command2 value2 ... output.png</code>
+                      <p>The usage of the command line commands and usage is:</p>
+                        <pre>
+                            Usage: mia infile.png [image processing commands ...] outfile.png
+                            
+                            infile.png:          input image file in png format
+                            outfile.png:         filename to use for saving the result
+                            
+                            -blur r:             apply a gaussian blur of radius r
+                            -edgedetect:         apply an edge detection filter
+                            -sharpen r:          apply a sharpening filter of radius r
+                            -red s:              scale the red channel by a factor s
+                            -green s:            scale the green channel by a factor s
+                            -blue s:             scale the blue channel by a factor s
+                            -quantize n:         quantize each color channel into n bins
+                            -saturate s:         saturate colors by scale factor s
+                            -threshold c:        threshold using the cutoff value c
+                            -motionblur-n-s r:    north-south motion blur with radius r
+                            -motionblur-e-w r:    east-west motion blur with radius r
+                            -motionblur-ne-sw r:  ne-sw motion blur with radius r
+                            -motionblur-nw-se r:  nw-se motion blur with radius r
+                        </pre>
+                      <p>The filter commands described above are explained in detail in the section <a href="#miafeatures">"How to use filters and tools for MIA"</a>.</p>
+                         
+                    <p>If the program did not start, type in <code>make mia</code>, followed by <code>./build/bin/mia</code>. While we recognize that this is not very user friendly and requires the user to be knowledgeable with using command line codes,we are working to make the program easier for users to understand and look for a new release soon.</p>
+                  </div>
+                  <br>
+                 <div class="subsection" title="Using Filters and Tools">
+                  <h4 class="alert alert-secondary" id="miafeatures" align="center">How to use filters and tools for MIA</h4>
+                                           <p>
+                        There are 2 tools provided for the MIA application as listed below. To see what each tool does, click on the desired tool below. Most descriptions credited to the TAs and Professors of CSCI 3081.
+                      </p>
+                      <p>
+                        Each tool can be chosen by selecting the desired tool in the pop-up window inside of the MIA application. The color can be chosesn for each by clicking on the bar immediately beneath the description "Tool Color" in the pop-up menu.
+                      </p>
+                     
+                     <div class="row">
+                         <div class="col-5">
+                            <div class="list-group" id="list-tab" role="tablist">
+                                <a class="list-group-item list-group-item-action" id="list-pen2-list" data-toggle="list" href="#list-pen2" role="tab" aria-controls="pen2" aria-selected="false">Pen</a>
+                                <a class="list-group-item list-group-item-action" id="list-stamp-list" data-toggle="list" href="#list-stamp" role="tab" aria-controls="stamp" aria-selected="false">Stamp</a>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="tab-content" id="nav-tabContent">
+                                <div class="tab-pane fade" id="list-pen2" role="tabpanel" aria-labelledby="list-pen2-list" align="center">
+                                    <img src="resources/pen.PNG" class="rounded mx-auto d-block" alt="...">
+                                    <p>
+                                      This tool is designed to look like a pen.  It makes an opaque, circular mark with constant intensity.  This means that when the pen is applied to the canvas the digital ink from the pen completely covers any color that had previously been applied to the canvas at that position.
+                                    </p>
+                                    <img src="resources/miapen.PNG" class="rounded mx-auto d-block" alt="...">
+                                    <p>
+                                      In order to use this tool, selected the "Pen" button on the GUI as shown above.
+                                    </p>
+                                </div>
+                                <div class="tab-pane fade" id="list-stamp" role="tabpanel" aria-labelledby="list-stamp-list" align="center">
+                                    <img src="resources/miamarkex.PNG" class="rounded mx-auto d-block" alt="...">
+                                    <p>
+                                      This tool is designed to place down a circular mark, with a dot in the center. It is great for highlighting key areas, such as fractures. 
+                                    </p>
+                                    <img src="resources/miastamp.PNG" class="rounded mx-auto d-block" alt="...">
+                                    <p>
+                                      In order to use this tool, selected the "Stamp" button on the GUI as shown above.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                      </div>
+                      </div>
+                      <p></p>
+                      <p>Additionally there are 5 basic filters provided, and for general descriptions and instructions please click on the desired filter.</p>
+                  <p>ALL FILTER IMAGES TAKEN FROM ITERATION 1 HANDOUT!</p>
+                      <div class="row">
+                         <div class="col-5">
+                            <div class="list-group" id="list-tab" role="tablist">
+                                <a class="list-group-item list-group-item-action" id="list-blurfilter2-list" data-toggle="pill" href="#list-blurfilter2" role="tab" aria-controls="blur-filter" aria-selected="true">Blur Filter</a>
+                                <a class="list-group-item list-group-item-action" id="list-edg2e-list" data-toggle="pill" href="#list-edge2" role="tab" aria-controls="edge" aria-selected="false">Edge Detect</a>
+                                <a class="list-group-item list-group-item-action" id="list-sharpen2-list" data-toggle="pill" href="#list-sharpen2" role="tab" aria-controls="sharpen" aria-selected="false">Sharpen</a>
+                                <a class="list-group-item list-group-item-action" id="list-quantize2-list" data-toggle="pill" href="#list-quantize2" role="tab" aria-controls="quantize" aria-selected="false">Quantize</a>
+                                <a class="list-group-item list-group-item-action" id="list-threshold2-list" data-toggle="pill" href="#list-threshold2" role="tab" aria-controls="threshold" aria-selected="false">Threshold</a>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="tab-content" id="nav-tabContent">
+                                <div class="tab-pane fade" id="list-blurfilter2" role="tabpanel" aria-labelledby="list-blurfilter2-list" align="center">
+                                    <img src="resources/blurfilter.PNG" class="rounded mx-auto d-block" alt="...">
+                                    <p>
+                                       The blur filter reduces the sharpness of a picture.
+                                    </p>
+                                    <img src="resources/flashblur.PNG" class="rounded mx-auto d-block" alt="...">
+                                    <p>
+                                        In order to use this filter, select the "Blur" button on the GUI as shown above, and adjust the slider to desired level of blur.
+                                        Finally, click on "Apply" to apply the filter.
+                                    </p>
+                                </div>
+                                <div class="tab-pane fade" id="list-edge2" role="tabpanel" aria-labelledby="list-edge2-list" align="center">
+                                    <img src="resources/edgefilter.PNG" class="rounded mx-auto d-block" alt="...">
+                                    <p>
+                                       The edge detection filter shows only the edges of shapes, where the pixels on the edges of differently colored regions are displayed
+                                        as brightly, whereas pixels elsewhere will be changed to a darker color.
+                                    </p>
+                                    <img src="resources/flashedge.PNG" class="rounded mx-auto d-block" alt="...">
+                                    <p>
+                                        In order to use this filter, select the "Edge Detect" button on the GUI as shown above, and click "Apply".
+                                    </p>
+                                </div>
+                                <div class="tab-pane fade" id="list-sharpen2" role="tabpanel" aria-labelledby="list-sharpen2-list" align="center">
+                                    <img src="resources/sharpenfilter.PNG" class="rounded mx-auto d-block" alt="...">
+                                    <p>
+                                       The sharpen filter sharpens the image and reduces the amount of blur.
+                                    </p>
+                                    <img src="resources/flashsharp.PNG" class="rounded mx-auto d-block" alt="...">
+                                    <p>
+                                        In order to use this filter, select the "Sharpen" button on the GUI as shown above, and adjust the slider to desired level of sharpness. 
+                                        Then click on "Apply" to apply the filter.
+                                    </p>
+                                </div>
+                                <div class="tab-pane fade" id="list-quantize2" role="tabpanel" aria-labelledby="list-quantize2-list" align="center">
+                                    <img src="resources/quantizefilter.PNG" class="rounded mx-auto d-block" alt="...">
+                                    <p>
+                                       The quantize filter reduces the number of unique colors in an image by grouping similar colors by "bin". 
+                                    </p>
+                                    <img src="resources/flashquant.PNG" class="rounded mx-auto d-block" alt="...">
+                                    <p>
+                                        In order to use this filter, select the "Quantize" button on the GUI as shown above, and adjust the slider to desired number of bins. 
+                                        Finally, click on "Apply" to apply the filter.
+                                    </p>
+                                </div>
+                                <div class="tab-pane fade" id="list-threshold2" role="tabpanel" aria-labelledby="list-threshold2-list" align="center">
+                                    <img src="resources/thresholdfilter.PNG" class="rounded mx-auto d-block" alt="...">
+                                    <p>
+                                       The threshold filter finds the average intensity of a pixel by averaging the RGB values. According to the threshold values set by the user,
+                                        any pixel with an average intensity greater than the threshold is turned white. Otherwise, the pixel turns black. 
+                                    </p>
+                                    <p>
+                                        In order to use this filter, select the "Threshold" button on the GUI as shown below, and adjust the slider to desired threshold value. 
+                                        Finally, click on "Apply" to apply the filter.
+                                    </p>
+                                    <img src="resources/flashthresh.PNG" class="rounded mx-auto d-block" alt="...">
+                                </div>
+                            </div>
+                        </div>
+                      </div>
+                  <p></p>
+                   <div class="subsection" title="Additional MIA Operations">
+                  <h4 class="alert alert-secondary" id="miaAdd" align="center">Additional MIA Features</h4>
+                    <p>
+                        This section highlights additional features that are useful to getting started with MIA. Please click on the features below for more information.
+                    </p>
+                    <div class="row">
+                         <div class="col-5">
+                            <div class="list-group" id="list-tab" role="tablist">
+                                <a class="list-group-item list-group-item-action" id="list-saveload-list2" data-toggle="list" href="#list-saveload2" role="tab" aria-controls="saveload" aria-selected="false">Loading and Saving</a>
+                                <a class="list-group-item list-group-item-action" id="list-undoredo-list2" data-toggle="list" href="#list-undoredo2" role="tab" aria-controls="undoredo" aria-selected="false">Undo and Redo</a>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="tab-content" id="nav-tabContent">
+                                <div class="tab-pane fade" id="list-saveload2" role="tabpanel" aria-labelledby="list-saveload-list2" align="center">
+                                    <p>
+                                      Loading and saving an image is very simple to do. All that is required is to click on the buttons "Load" or "Save" in the upper left hand corner of your screen as shown below, and you're set!
+                                    </p>
+                                    <img src="resources/load.png" class="rounded mx-auto d-block" alt="...">
+                                </div>
+                                <div class="tab-pane fade" id="list-undoredo2" role="tabpanel" aria-labelledby="list-undoredo-list2" align="center">
+                                    <p>
+                                      In order to undo or redo a stroke or filter, click on the buttons "Undo" or "Redo" in the GUI as shown by the image below.
+                                    </p>
+                                    <img src="resources/undo.png" class="rounded mx-auto d-block" alt="...">
+                                </div>
+                            </div>
+                        </div>
+                      </div>
+                  </div>
+                  <p></p>
+                  </div>
+              <div class="section" title="For Developers">
+                <div class="titlepage">
+                  <div>
+                    <div>
+                      <h2 class="alert alert-primary" role="alert" align="center">
+                        <a id="forDevs"></a>
+                        For Developers
+                      </h2>
+                    </div>
+                  </div>
+                </div>
+                <p>THis section is intended for developers to understand the basic implementation of the project. It is broken down into four subsections:</p>
+                  <ol>
+                      <li><a href="#progref">"Programming Reference"</a> provides information about the namespace used, class descriptions and information, and overall project structure.</li>
+                      <li><a href="#highID">"High-Level Design"</a> describes the major patterns and designs used in the project, as well as project structure.</li>
+                      <li><a href="#codeStyleID">"Coding Style"</a> highlights important style practices used within the project, which closely follows Google Style conventions.</li>
+                      <li><a href="#commonTasksID">"Common Tasks"</a> describes how to setup a new tool or filter in the project.</li>
+                  </ol>
+              </div>
+              <div class="section" title="Programming Reference">
+                <div class="titlepage">
+                  <div>
+                    <div>
+                      <h3 class="alert alert-secondary" style="" align="center">
+                        <a id="progref"></a>
+                        Programming Reference
+                      </h3>
+                    </div>
+                  </div>
+                </div>
+                <p>For implementation details of every aspect of the MIA and Flashphoto application please follow this <a href="./doxygen-html/index.html">link</a>.
+                    The page includes class descriptions such as class members, hierarchy, and functions, as well as overall project structure.</p>
+                  <small>Note to graders, please call <code>make docs</code> to generate Doxygen webpage for the link above to work.</small>
+              </div>
+              <div class="section" title="High-Level Design">
+                <div class="titlepage">
+                  <div>
+                    <div>
+                      <h3 class="alert alert-secondary" style="" align="center">
+                        <a id="highID"></a>
+                        High-Level Design
+                      </h3>
+                    </div>
+                  </div>
+                </div>
+                  The Flashphoto and MIA directories are set up as follows:
+                  <pre>
+                  src/
+                      external/
+                      flashphoto/
+                      imagetools/
+                      mia/
+                      tests/
+                  </pre>
+                  <p>The external directory is where the google testing gtest framework is compiled, as well as where the graphics framework is stored. The flashphoto and mia directories store the location of the flashphoto and mia application, which both utilize the external directory's graphics framework. The tests directory stores all gtests for the flashphoto and mia application, as well as the imagetools directory files.</p>
+                  <p>The imagetools directory is where all of the tools, filters, and commands are located. During compilation of the Flashphoto and MIA applications, the imagetools directory is compiled into a library, which is then linked to the two applications. Additionally, the library is linked to the tests directory for testing.</p>
+                  <p>The Model View Controller Paradigm was used in the design of the MIA and Flashphoto applications. The reason for using the paradigm is to partition the application such that it can be scaled, easily maintained, and allow for possible changes to be as localized to the area of the change as possible. For example, the tools and filters are implemented separately from both MIA and Flashphoto. If a problem occurred while using a tool, the source can be tracked down quicker and more efficiently to the corresponding file. Additionally, if either MIA or Flashphoto require a tool or filter to be added or removed from the application, it is much easier to do as it would simply require the feature to be updated with the GUI for the application. Another major reason for using the MVC is code reusability. Once a feature has been added to the imagetools library, any application utilizing the library can implement the new feature provided it is properly setup with the GUI.</p>
+                  <p>There are 3 major classes within the application: Tools, Filters, and ImageEditorCommands. All are located within the imagetools directory. The major classes are described in the following subsections</p>
+                  <div class="subsection" title="ToolsDesign">
+                      <h5 align="center">Tools Design</h5> 
+                      <p>The tools within imagetools inherit from the purely abstract Tool class. The Factory Method was used, as every tool has a mask which is created by the CreateMask function, however the    way that each tool implements the function has some variation. Therefore, the CreateMask Function is purely virtual and every tool decides how to implement its own mask creater. The exact inheritance structure is shown below:</p>
+                      <img src="resources/tools.png" class="rounded mx-auto d-block" alt="...">
+                      <p>For instructions on how to implement a new tool, follow <a href="#addTool">"Adding Tools"</a>.</p>
+                  </div>
+                  <br>
+                  <div class="subsection" title="FilterDesign">
+                      <h5 align="center">Filters Design</h5>
+                      <p>Filters follow a similar design as tools, as the Factory Method is used for each filter implementation. The function CalculateFilteredPixel is purely virtual, and each filter subclass must provide   an implementation. One subclass of filters is a new type of filter design, called Convolution filters. </p>
+                      <p>The Convolution filters cannot operate in place on the image as they examine neighboring pixels and modify them as the filter is applied. Therefore, they must setup and cleanup filters in a different manner than the superclass filter. The ConvolutionFilter superclass was implemented as the base convolution class, and an implementation for CalculateFilteredPixel was provided. However, each subclass convolution filter creates its own version of a kernel, and the Factory Method was used again for each convolution filter. Each convolution filter inherits from the ConvolutionFilter class, and provides its own implementation of CreateKernel.</p>
+                      <p>The inheritence diagram for filters, both simple and convolution filters, are shown below:</p>
+                      <img src="resources/filterinherit.png" class="rounded mx-auto d-block" alt="...">
+                      <p>For instruction on how to implement a new filter, follow <a href="#addFilter">"Adding Filters"</a></p>
+                  </div>
+                  <div class="subsection" title="CommandLine">
+                      <h5 align="center">Command Line Design</h5>
+                      <p>The project utilizes the Command Pattern for command line use, where every request from the command line is handled by the class CommandLineProcessor. The CommandLineProcessor class parses the requests from the user and determines whether each request is valid. If every request is valid, the CommandLineProcessor calls the ImageEditorCommands in the order that the requests were received. The ImageEditorCommands class is where every tool, filter, and utility can be called from given the proper request. The structure of the class is shown below:</p>
+                  <img src="resources/commands.png" class="rounded mx-auto d-block" alt="...">
+                  </div>
+                  <br>
+              </div>
+              <div class="section" title="Coding Style">
+                <div class="titlepage">
+                  <div>
+                    <div>
+                      <h3 class="alert alert-secondary" style="" align="center">
+                        <a id="codeStyleID"></a>
+                        Coding Style
+                      </h3>
+                    </div>
+                  </div>
+                </div>
+                <p>
+                    The Flashphoto and MIA application follow the Google Style guide, which can be found <a href="https://google.github.io/styleguide/cppguide.html">here</a>. Key styling practices have been highlighted below as the most important practices followed while building the application. 
+                </p>
+                  <br>
+                <div class="subsection" title="OrderIncludes">
+                    <h5 align="center">Order of Includes</h5>
+                    <br>
+                    <p>
+                        The order of the header and system files is important for the avoidance of hidden dependencies, readability, and standardization.
+                    </p>
+                    <p>The order is as follows:</p>
+                    <ol>
+                        <li>Header related to current file. ie: directory/currentclass.h</li>
+                        <li>C system files</li>
+                        <li>C++ system files</li>
+                        <li>Other library header files</li>
+                        <li>Other header files from MIA or Flashphoto project</li>
+                    </ol>
+                    <p>
+                        The perfect example of this style is from the imagetools/filter.cc file:
+                    </p>
+                    <img src="resources/includes.PNG"  alt="...">
+                    <br>
+                </div>
+                  <div class="subsection" title="Naming Convention">
+                      <br>
+                      <h5 align="center">Naming Conventions</h5>
+                      <p>In order for code to be self documenting, names should accurately reflect what is being named and also be understandable to readers unfamiliar with the project. The subsections below are the conventions most commonly used for this project.</p>
+                      <div class="list-group">
+                          <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+                              <div class="d-flex w-100 justify-content-between">
+                                  <h6 style="text-decoration:underline" class="mb-1">File Names</h6>
+                              </div>
+                              <p class="mb-1">Files in MIA and Flashphoto use underscores as convention. All header files end in .h, libraries end in .a, and .cc for C++ files.</p>
+                              For example, in this project the filter class header is <code>imagetools/filter.h</code> and the corresponding C++ file is <code>imagetools/filter.cc</code>.
+                          </a>
+                          <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+                              <div class="d-flex w-100 justify-content-between">
+                                  <h6 style="text-decoration:underline" class="mb-1">Type Names</h6>
+                              </div>
+                              <p class="mb-1">All type names in the project start with a capital letter as well as the start of each new word within the name.</p>
+                              <p>Examples:</p>
+                              <pre>
+                              class NameOne {...}
+                              enum EnumNameTwo {...}
+                              </pre>
+                          </a>
+                          <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+                              <div class="d-flex w-100 justify-content-between">
+                                  <h6 style="text-decoration:underline" class="mb-1">Variable Names</h6>
+                              </div>
+                              <br>
+                              <h6>Common Names</h6>
+                              <p>It is common to use all underscores to separate words in variable names, and also acceptable to omit underscores. However, it is best to maintain the same conventions used in this project, which relies on using underscores.</p>
+                              <p>It is NOT acceptable to used camelcase to name variables such as: camelCase</p>
+                              <br>
+                              <h6>Private Class Members</h6>
+                              <p>Private class member variables follow common variable naming convention mentiod above, however they include a trailing underscore.</p>
+                              <p>For example:</p> 
+                              <pre>int ex_int_;  // trailing underscore after ex_int
+                              </pre>
+                          </a>
+                          <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+                              <div class="d-flex w-100 justify-content-between">
+                                  <h6 style="text-decoration:underline" class="mb-1">Function Names</h6>
+                              </div>
+                              <p class="mb-1">Function names are mixed cased with the capitalization of the first letter in each word, similar to the type name convention.</p> 
+                              <br>
+                              <p> However, mutators and accessors can be named similar to variables. They are named for the variable that they work with. Typically, accessors are named for the variable being accessed without the additional "get".</p>
+                              <p>For example, if a class has a private member variable named <code>int radius_;</code>, then the accessor and mutator would look like:</p>
+                              <pre>
+                              int radius();
+                              void set_radius(int r);
+                              </pre>
+                          </a>
+                      </div>
+                  </div>
+                  <br>
+                  <div class="subsection" title="Commenting">
+                      <h5 align="center">Commenting</h5>
+                      <br>
+                      <p>
+                          Commenting and documentation of code is extremely important. It allows other developers to understand what a piece of code is doing, and how they can properly utilize certain classes and functions to their advantage.
+                      </p>
+                      <pre> -THE MOST IMPORTANT COMMENTING PRACTICE IS WRITING SELF DOCUMENTING CODE! </pre>
+                      <p>
+                        Commenting functions and classes is important, however by naming variables and functions properly conveys much more to a developer than having to comment difficult to understand code due to poorly named sections of code. It also makes code more skimmable and easier to understand.
+                      </p>
+                      <p>There are 3 main ways comments ways to comment:</p>
+                      <ol>
+                          <li><code>
+                              /** Comments inserted here typically describe classes and functions within the header file, and they can span multiple lines. Doxygen is able to capture this style of comment as well. */
+                              </code>
+                          </li>
+                          <li>
+                              <code>
+                                  // This commenting style is good for single line comments, and is the most common form of commenting. However, this style is not Doxygen recognized.
+                              </code>
+                          </li>
+                          <li>
+                              <code>
+                                  /// This commenting style is identical to the two forward slashes, however it is Doxygen recognized. This style is not very widely used, and was not used in this project.
+                              </code>
+                          </li>
+                      </ol>
+                      <p>Commenting styles 1 and 2 are Google style compliant, and their use is based on developer preference. The preferred style of commenting in this project is the use of <code>/** */</code> for function and class descriptions, and <code>//</code> is used for specific implementation clarification.</p>
+                  </div>
+                  <br>
+                  <div class="subsection" title="Spacing and Indentation">
+                      <h5 align="center">Spacing and Indentation</h5>
+                      <br>
+                      <p>Proper spacing and indentation allows for easier readability and skimmability of code. Tabs are not allowed, and only indent two spaces at a time. The MIA and Flashphoto project utilizes the following convention requirements:</p>
+                      <ol>
+                          <li>
+                              End of line comments have two spaces between end of code and comment. 
+                              <br>
+                              For example: 
+                              <pre>
+                              end_of_code();  // 2 spaces
+                              </pre>
+                          </li>
+                          <li>
+                              Include a space between the closed parenthesis and the open curly brace
+                              <br>
+                              For example: 
+                              <pre>
+                              (...)space{...}
+                              </pre>
+                          </li>
+                          <li>
+                              Parameters that are wrapped require a 4 space indent.
+                              <br>
+                              For example:<pre>
+                              LongNameFunctionWithManyParametersFunction(
+                                    type param1,    // 4 spaces
+                                    type param2,    // 4 spaces
+                                    type param3) {...}
+                              </pre>
+                          </li>
+                          <li>
+                              Conditionals have one space between <code>if</code> and <code>else if</code>, and the open parenthesis with the condition
+                              <br>
+                              For example:
+                              <pre>
+                              if (condition) {...}
+                              </pre>
+                          </li>
+                          <li>
+                              When formatting classes in the header files, include one space between the keywords <code>public</code>, <code>private</code>, and <code>protected</code>.
+                              <br>
+                              For example:
+                              <pre>
+                              class ExampleClass : public OtherExample {
+                               public:  // one space indent
+                                ...     // regular space indent
+                                
+                               private:  // one space indent
+                              }
+                              </pre>
+                      </ol>
+                  </div>
+                  <br>
+              </div>
+              <div class="section" title="Common Tasks" >
+                <div class="titlepage">
+                  <div>
+                    <div>
+                      <h3 class="alert alert-secondary" style="" align="center">
+                        <a id="commonTasksID"></a>
+                        Common Tasks
+                      </h3>
+                    </div>
+                  </div>
+                </div>
+                <p>There are two common tasks that are most likely areas of expansion for the projects: additional tools and filters. The subsections below describe the basic procedure to follow to setup your own tools and features.</p>
+                  <p>After setting up a new tool or filter, you must remake the project! From the PROJ directory, use the command <code>make clean</code> to clean the project and the command <code>make</code> to rebuild the project.</p>
+                <div class="subsection" title="Namespace Use">
+                    <h5 id="addFilter" align="center">Adding Filters</h5>
+                    <p>There are two types of filters implemented in MIA and Flashphoto. A simple filter is one which can be operated in place and only examines a single pixel. More complex filters require the examination of neighboring pixels, and thus fall under the convolution filter category. Instructions for the implementation of these two filters are described below.</p>
+<!--                    <div class="subsection" title="Namespace Use">-->
+<!--                      <h5 align="center">Simple Filter</h5>-->
+                        <p>
+                            Every filter inherits from the imagetools/filter.h file, which describes all basic functions that must be included with a new filter. The base filter class cannot be instantiated, as it is purely virtual. Additionally, convolution filters inherit from from the imagetools/convolution_filter.h file, which inherits from the imagetools/filter.h file.
+                        </p>
+                        <p> 
+                            The one requirement of a new simple filter is that it must include is a CalculateFilteredPixel() method that overrides the purely virtual imagetools/filter.h class. 
+                        </p>
+                        <p>Convolution filters have a base implementation for the CalculateFilteredPixel() filter method, therefore only require the function CreateKernel() to be overridden by classes which inherit from the convolution filter class.</p>
+                        <p>
+                            The following are the steps to creating a new filter, and hooking it up to the project to work with the GUI:
+                        </p>
+                        <ol>
+                            <li>Create your new filter inside of the directory <code>imagetools</code>.</li>
+                            <li>IT IS IMPORTANT TO MAKE THE NEW FILTER WITH THE NAMESPACE image_tools! For example: 
+                            <pre>
+                            #include "imagetools/filter.h"
+                            
+                            namespace image_tools {
+                            
+                            class NewFilter : public Filter {
+                            
+                            };
+                            
+                            }
+                            </pre>
+                            </li>
+                            <li>Using proper style as described in the section <a href="#codingStyle">"Coding Style"</a> above, for simple filters include the filter header file as follows: <code>#include "imagetools/filter.h"</code>. For convolution filters, include the convolution header file as follows: <code>#include "imagetools/convolution_filter.h"</code></li>
+                            <li>Setup the new class such that the required methods are implemented. Simple filters require CalculateFilteredPixel(), whereas convolution filters require only CreateKernel() as the CalculateFilteredPixel() is handled by the base convolution filter class.  Make sure to still setup the constructor and destructor for the class.</li>
+                            <li>Now that the new filter class has been created, it must be setup for use with the GUI. See the section <a href="#guiSetup">"Setting up GUI with New Tool or Filter"</a>.</li>
+                            <li>Finally, once the filter has been properly setup with the GUI, the imagetools library must be re-compiled. To do this, move into the PROJ directory and type <code>make clean</code> followed by <code>make imagetools</code>.</li>
+                        </ol>
+                  <br>
+                </div>
+                <div class="subsection" title="Namespace Use">
+                    <h5 id="addTool" align="center">Adding Tools</h5>
+                    <p>Every tool inherits from the same class: "imagetools/tool.h". Tool is purely virtual, therefore any tool that is created must override the function CreateMask(). The instructions to create a tool are listed as below.</p>
+                    <ol>
+                        <li>Create your new tool inside of the directory <code>imagetools</code>.</li>
+                        <li>Using proper style as described in the section <a href="#codingStyle">"Coding Style"</a>, include the tool header file as follows to the new tool's header file: <code>#include "imagetools/tool.h"</code>.</li>
+                        <li>Setup the new class such that the function CreateMask() is implemented as an overridden function from tool. Remember to add constructor and destructor to the new tool.</li>
+                        <li>Once the new tool has been created, it must be setup for use with the GUI. See the section <a href="#guiSetup">"Setting up GUI with New Tool or Filter"</a>.</li>
+                        <li>After the new tool has been properly setup with the GUI, the imagetools library must be re-compiled. To do this, move into the src directory and type <code>make clean</code> followed by <code>make imagetools</code>.</li>
+                    </ol>
+                </div>
+                  <br>
+                <div class="subsection" id="guiSetup" title="Namespace Use">
+                      <h5 align="center">Setting up GUI with New Tool or Filter.</h5>
+                    <p>The new tool or filter must be added to the image_editor files located in the directory imagetools.</p>
+                    <p>The key steps to adding the tool or filter to the image_editor class are:</p>
+                    <ol>
+                        <li>Add the new feature to the includes at the top of the imagetools/image_editor.h file.</li>
+                        <li>Add a private data member variable to the image_editor header file.</li>
+                        <li>If the new feature is a filter, add an apply function to the class. For example, the quantize filter has a function named 
+                            <pre>
+                            void ApplyQuantizeFilter(int num_bins);</pre>
+                        </li>
+                        <li>If the new feature is a tool, add into the GetToolByName() function's conditional statement the name of the new tool and return a pointer to an instance of the tool.
+                        For example:
+                            <pre> 
+                            } else if (name == t_new_.name()) {
+                              return &t_new_;
+                            }
+                            </pre>
+                        </li>
+                        <li>Now that the new feature has been added to the image_editor, the last step requires the feature to be hooked up to the GUI for the desired project. The GUI for Flashphoto is located in <code>flashphoto/flashphoto_app.cc</code> and for MIA the GUI is located in <code>mia/mia_app.cc</code></li>
+                    </ol>
+                  </div>
+              </div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  </body>
+</html>

@@ -1,0 +1,4 @@
+*.o
+*.out
+*.a
+point2_unittest
